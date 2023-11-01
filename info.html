@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./bt5/bootstrap-5.3.1/css/bootstrap.min.css">
+    <link href="./css/info.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+
+    <script src="./bt5/jquery/jquery-3.7.0.min.js"></script>
+    <script src="./bt5/bootstrap-5.3.1/js/bootstrap.bundle.min.js"></script>
+
+    <title>Prefeitura de Municipal Paty do Alferes - IPTU</title>
+</head>
+<body>
+    <div class="main_container">
+        <div class="brasao_container">
+            <img src="images/v4_13.png" alt="Brasão da Prefeitura Municipal de Paty do Alferes" id="brasao">
+        </div>
+        
+        <div class="logo_container">
+            <img src="images/v4_14.png" alt="Logo da Prefeitura Municipal de Paty do Alferes" id="logo">
+        </div>
+
+        <div>
+            <form action="opcoes.html">
+                <button type="submit" class="btn btn-success border-0 rounded-3 fw-bold" id="btn-voltar">Voltar</button>
+            </form>
+
+            <form action="javascript:void(0)">
+                <button type="submit" class="btn btn-success border-0 rounded-3 fw-bold" id="btn-print">Imprimir BIC resumida</button>
+            </form>
+
+           <div id="Dcadastrais_container">
+                <p class="fw-bold text-center text-black pt-2" id="titles">Dados cadastrais do imóvel</p>
+
+                <div class="row mt-4 mb-2">
+                    <div class="col col-2 ps-5">
+                        <p class="fw-bold text-black" id="p">Matrícula</p>
+                    </div>
+                    <div class="col col-2">
+                        <input type="text" class="fw-bold text-white text-center rounded-3 border-0" disabled id="input-info" value="84839">
+                    </div>
+
+                    <div class="col col-2 ps-5">
+                        <p class="fw-bold text-black" id="p">Mobiliária</p>
+                    </div>
+                    <div class="col col-2 ps-0">
+                        <input type="text" class="fw-bold text-white text-center rounded-3 border-0" disabled id="input-info" value="">
+                    </div>
+
+                    <div class="col col-2 ps-5">
+                        <p class="fw-bold text-black" id="p">Referência anterior</p>
+                    </div>
+                    <div class="col col-2 ps-0">
+                        <input type="text" class="fw-bold text-white text-center rounded-3 border-0" disabled id="input-info" value="01080100166001">
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col col-2 ps-5">
+                        <p class="fw-bold text-black" id="p">Lote</p>
+                    </div>
+                    <div class="col col-2">
+                        <input type="text" class="fw-bold text-white text-center rounded-3 border-0" disabled id="input-info">
+                    </div>
+
+                    <div class="col col-2 ps-5">
+                        <p class="fw-bold text-black" id="p">Proprietário</p>
+                    </div>
+                    <div class="col col-2 ps-0">
+                        <input type="text" class="fw-bold text-white text-center rounded-3 border-0" disabled id="input-info" value="Guilherme Veiga Azevedo">
+                    </div>
+
+                    <div class="col col-2 ps-5">
+                        <p class="fw-bold text-black" id="p">Logradouro</p>
+                    </div>
+                    <div class="col col-2 ps-0">
+                        <input type="text" class="fw-bold text-white text-center rounded-3 border-0" disabled id="input-info">
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col col-2 ps-5">
+                        <p class="fw-bold text-black" id="p">Setor</p>
+                    </div>
+                    <div class="col col-2">
+                        <input type="text" class="fw-bold text-white text-center rounded-3 border-0" disabled id="input-info">
+                    </div>
+
+                    <div class="col col-2 ps-5">
+                        <p class="fw-bold text-black" id="p">Data baixa</p>
+                    </div>
+                    <div class="col col-2 ps-0">
+                        <input type="text" class="fw-bold text-white text-center rounded-3 border-0" disabled id="input-info">
+                    </div>
+
+                    <div class="col col-2 ps-5">
+                        <p class="fw-bold text-black" id="p">Promitente</p>
+                    </div>
+                    <div class="col col-2 ps-0">
+                        <input type="text" class="fw-bold text-white text-center rounded-3 border-0" disabled id="input-info" value="MARCELO DE SOUZA JESUS  	">
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col col-2 ps-5">
+                        <p class="fw-bold text-black" id="p">Área lote</p>
+                    </div>
+                    <div class="col col-2">
+                        <input type="text" class="fw-bold text-white text-center rounded-3 border-0" disabled id="input-info">
+                    </div>
+
+                    <div class="col col-2 ps-5">
+                        <p class="fw-bold text-black" id="p">Quadra</p>
+                    </div>
+                    <div class="col col-2 ps-0">
+                        <input type="text" class="fw-bold text-white text-center rounded-3 border-0" disabled id="input-info">
+                    </div>
+                </div>
+           </div>
+
+           <div id="caracteristicasImovel_container">
+                <p class="text-black text-center fw-bold p-1" id="titles">Características do Imóvel</p>
+
+                <div class="row mt-4 mb-3">
+                    <div class="col col-2 ps-5">
+                        <p class="fw-bold text-black" id="p">6</p>
+                    </div>
+                    <div class="col col-4 ps-0">
+                        <input type="text" class="fw-bold text-white text-center rounded-3 border-0" disabled id="input-info-200px" value="OCUPAÇÃO DO LOT - Construido	">
+                    </div>
+
+                    <div class="col col-4 ps-4">
+                        <input type="text" class="fw-bold text-white text-center rounded-3 border-0" disabled id="input-info-200px">
+                    </div>
+                    <div class="col ps-5">
+                        <p class="fw-bold text-black" id="p">8</p>
+                    </div>
+                   
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col col-2 ps-5">
+                        <p class="fw-bold text-black" id="p">17</p>
+                    </div>
+                    <div class="col col-4 ps-0">
+                        <input type="text" class="fw-bold text-white text-center rounded-3 border-0" disabled id="input-info-200px">
+                    </div>
+
+                    <div class="col col-4 ps-4">
+                        <input type="text" class="fw-bold text-white text-center rounded-3 border-0" disabled id="input-info-200px">
+                    </div>
+                    <div class="col ps-5">
+                        <p class="fw-bold text-black" id="p">18</p>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col col-2 ps-5">
+                        <p class="fw-bold text-black" id="p">23</p>
+                    </div>
+                    <div class="col col-4 ps-0">
+                        <input type="text" class="fw-bold text-white text-center rounded-3 border-0" disabled id="input-info-200px">
+                    </div>
+
+                    <div class="col col-4 ps-4">
+                        <input type="text" class="fw-bold text-white text-center rounded-3 border-0" disabled id="input-info-200px">
+                    </div>
+                    <div class="col ps-5">
+                        <p class="fw-bold text-black" id="p">28</p>
+                    </div>
+                </div>
+           </div>
+
+           <div id="testada_container">
+                <p class="text-black text-center fw-bold p-1" id="titles">Testada</p>
+
+                <div class="row mt-4 mb-3 ms-1">
+                    <div class="col col-5 ps-5">
+                        <p class="fw-bold text-black" id="p">Rua</p>
+                    </div>
+                    <div class="col col-2">
+                        <input type="text" class="fw-bold text-white text-center rounded-3 border-0" disabled id="input-info">
+                    </div>
+                </div>
+
+                <div class="row mb-3 ms-1">
+                    <div class="col col-5 ps-5">
+                        <p class="fw-bold text-black" id="p">Face</p>
+                    </div>
+                    <div class="col col-2">
+                        <input type="text" class="fw-bold text-white text-center rounded-3 border-0" disabled id="input-info">
+                    </div>
+                </div>
+
+                <div class="row mb-3 ms-1">
+                    <div class="col col-5 ps-5">
+                        <p class="fw-bold text-black" id="p">Testada</p>
+                    </div>
+                    <div class="col col-2">
+                        <input type="text" class="fw-bold text-white text-center rounded-3 border-0" disabled id="input-info">
+                    </div>
+                </div>
+           </div>
+
+           <div id="edificacoes_container">
+                <p class="text-black text-center fw-bold p-1" id="titles">Edificações</p>
+
+                <div class="row mt-4 mb-3">
+                    <div class="col col-5 ps-5">
+                        <p class="fw-bold text-black" id="p">Frente</p>
+                    </div>
+                    <div class="col col-2">
+                        <input type="text" class="fw-bold text-white text-center rounded-3 border-0" disabled id="input-info">
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col col-5 ps-5">
+                        <p class="fw-bold text-black" id="p">Construção</p>
+                    </div>
+                    <div class="col col-2">
+                        <input type="text" class="fw-bold text-white text-center rounded-3 border-0" disabled id="input-info">
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col col-5 ps-5">
+                        <p class="fw-bold text-black" id="p">Área</p>
+                    </div>
+                    <div class="col col-2">
+                        <input type="text" class="fw-bold text-white text-center rounded-3 border-0" disabled id="input-info">
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col col-5 ps-5">
+                        <p class="fw-bold text-black" id="p">Ano construção</p>
+                    </div>
+                    <div class="col col-2">
+                        <input type="text" class="fw-bold text-white text-center rounded-3 border-0" disabled id="input-info">
+                    </div>
+                </div>
+          </div>
+
+          <div id="isencoes_container">
+                <p class="text-black text-center fw-bold p-4" id="titles">Isenções</p>
+
+                <div class="row mt-4 mb-3">
+                    <div class="col text-center mt-4">
+                        <input type="text" class="fw-bold text-white text-center rounded-3 border-0" disabled id="input-info">
+                    </div>
+                </div>
+          </div>
+
+           <div id="outros-proprietarios_container">
+                <p class="text-black text-center fw-bold p-4" id="titles">Outros proprietáros</p>
+
+                <div class="row mt-4 mb-3">
+                    <div class="col text-center mt-4">
+                        <input type="text" class="fw-bold text-white text-center rounded-3 border-0" disabled id="input-info">
+                    </div>
+                </div>
+           </div>
+
+           <div id="caracteristicas_container">
+                <p class="text-black text-center fw-bold p-1" id="titles">Características</p>
+
+                <div class="row mt-4 mb-2">
+                    <div class="col col-1 ps-5">
+                        <p class="fw-bold text-black" id="p">11</p>
+                    </div>
+                    <div class="col col-3 ps-3">
+                        <input type="text" class="fw-bold text-white text-center rounded-3 border-0" disabled id="input-info" value="Residencial">
+                    </div>
+
+                    <div class="col col-1 ps-5">
+                        <p class="fw-bold text-black" id="p">99</p>
+                    </div>
+                    <div class="col col-3 ps-3">
+                        <input type="text" class="fw-bold text-white text-center rounded-3 border-0" disabled id="input-info" value="">
+                    </div>
+
+                    <div class="col col-1 ps-5">
+                        <p class="fw-bold text-black" id="p">74</p>
+                    </div>
+                    <div class="col col-2 ps-3">
+                        <input type="text" class="fw-bold text-white text-center rounded-3 border-0" disabled id="input-info" value="">
+                    </div>
+                </div>
+
+                <div class="row mt-3 mb-2">
+                    <div class="col col-1 ps-5">
+                        <p class="fw-bold text-black" id="p">52</p>
+                    </div>
+                    <div class="col col-3 ps-3">
+                        <input type="text" class="fw-bold text-white text-center rounded-3 border-0" disabled id="input-info" value="">
+                    </div>
+
+                    <div class="col col-1 ps-5">
+                        <p class="fw-bold text-black" id="p">103</p>
+                    </div>
+                    <div class="col col-3 ps-3">
+                        <input type="text" class="fw-bold text-white text-center rounded-3 border-0" disabled id="input-info" value="">
+                    </div>
+
+                    <div class="col col-1 ps-5">
+                        <p class="fw-bold text-black" id="p">81</p>
+                    </div>
+                    <div class="col col-2 ps-3">
+                        <input type="text" class="fw-bold text-white text-center rounded-3 border-0" disabled id="input-info" value="">
+                    </div>
+                </div>
+
+                <div class="row mt-3 mb-2">
+                    <div class="col col-1 ps-5">
+                        <p class="fw-bold text-black" id="p">57</p>
+                    </div>
+                    <div class="col col-3 ps-3">
+                        <input type="text" class="fw-bold text-white text-center rounded-3 border-0" disabled id="input-info" value="">
+                    </div>
+
+                    <div class="col col-1 ps-5">
+                        <p class="fw-bold text-black" id="p">113</p>
+                    </div>
+                    <div class="col col-3 ps-3">
+                        <input type="text" class="fw-bold text-white text-center rounded-3 border-0" disabled id="input-info" value="">
+                    </div>
+
+                    <div class="col col-1 ps-5">
+                        <p class="fw-bold text-black" id="p">92</p>
+                    </div>
+                    <div class="col col-2 ps-3">
+                        <input type="text" class="fw-bold text-white text-center rounded-3 border-0" disabled id="input-info" value="">
+                    </div>
+                </div>
+
+                <div class="row mt-3 mb-2">
+                    <div class="col col-1 ps-5">
+                        <p class="fw-bold text-black" id="p">68</p>
+                    </div>
+                    <div class="col col-3 ps-3">
+                        <input type="text" class="fw-bold text-white text-center rounded-3 border-0" disabled id="input-info" value="">
+                    </div>
+
+                    <div class="col col-1 ps-5">
+                        <p class="fw-bold text-black" id="p">50</p>
+                    </div>
+                    <div class="col col-3 ps-3">
+                        <input type="text" class="fw-bold text-white text-center rounded-3 border-0" disabled id="input-info" value="">
+                    </div>
+
+                    <div class="col col-1 ps-5">
+                        <p class="fw-bold text-black" id="p">100</p>
+                    </div>
+                    <div class="col col-2 ps-3">
+                        <input type="text" class="fw-bold text-white text-center rounded-3 border-0" disabled id="input-info" value="">
+                    </div>
+                </div>
+
+                <div class="row mt-3 mb-2">
+                    <div class="col col-1 ps-5">
+                        <p class="fw-bold text-black" id="p">77</p>
+                    </div>
+                    <div class="col col-3 ps-3">
+                        <input type="text" class="fw-bold text-white text-center rounded-3 border-0" disabled id="input-info" value="">
+                    </div>
+
+                    <div class="col col-1 ps-5">
+                        <p class="fw-bold text-black" id="p">54</p>
+                    </div>
+                    <div class="col col-3 ps-3">
+                        <input type="text" class="fw-bold text-white text-center rounded-3 border-0" disabled id="input-info" value="">
+                    </div>
+
+                    <div class="col col-1 ps-5">
+                        <p class="fw-bold text-black" id="p">105</p>
+                    </div>
+                    <div class="col col-2 ps-3">
+                        <input type="text" class="fw-bold text-white text-center rounded-3 border-0" disabled id="input-info" value="">
+                    </div>
+                </div>
+
+                <div class="row mt-3 mb-2">
+                    <div class="col col-1 ps-5">
+                        <p class="fw-bold text-black" id="p">86</p>
+                    </div>
+                    <div class="col col-3 ps-3">
+                        <input type="text" class="fw-bold text-white text-center rounded-3 border-0" disabled id="input-info" value="">
+                    </div>
+
+                    <div class="col col-1 ps-5">
+                        <p class="fw-bold text-black" id="p">64</p>
+                    </div>
+                    <div class="col col-3 ps-3">
+                        <input type="text" class="fw-bold text-white text-center rounded-3 border-0" disabled id="input-info" value="">
+                    </div>
+                </div>
+
+           </div>
+        </div>
+    </div>
+</body>
+</html>

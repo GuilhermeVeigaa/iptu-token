@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./bt5/bootstrap-5.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link href="./css/matricula.css" rel="stylesheet">
+
+    <script src="./bt5/jquery/jquery-3.7.0.min.js"></script>
+    <script src="./bt5/bootstrap-5.3.1/js/bootstrap.bundle.min.js"></script>
+
+    <title>Prefeitura de Municipal Paty do Alferes - IPTU</title>
+</head>
+<body>
+    <div class="main_container">
+        <div class="brasao_container">
+            <img src="images/v4_13.png" alt="Brasão da Prefeitura Municipal de Paty do Alferes" id="brasao">
+        </div>
+        
+        <div class="logo_container">
+            <img src="images/v4_14.png" alt="Logo da Prefeitura Municipal de Paty do Alferes" id="logo">
+        </div>
+
+        <div class="matricula">
+           <h1 id="title">Coloque a matrícula do seu imóvel abaixo</h1>
+
+            <div class="arrow">
+                <img src="./images/arrow.svg" alt="" id="flecha">
+            </div>
+
+            <form action="opcoes.html">
+                <div class="form-floating">
+                    <input type="number" class="form-control fw-bold text-black rounded-3" placeholder="Matrícula do imóvel" id="matricula" required>
+
+                    <label for="matricula" class="form-label">Matrícula do imóvel</label>
+                </div>
+
+                <div class="button_container">
+                    <button type="submit" id="buttons">Buscar...</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</body>
+</html>

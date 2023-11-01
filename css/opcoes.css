@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 14px;
+  overflow-x: hidden;
+  background: rgb(241, 245, 247);
+}
+.main_container {
+  width: 1440px;
+  height: 1024px;
+  position: absolute;
+}
+
+#brasao {
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  margin-top: 16px;
+  margin-left: 129px;
+}
+
+#logo {
+  width: 290px;
+  height: 80px;
+  position: absolute;
+  margin-top: 64px;
+  margin-left: 290px;
+}
+
+#title {
+margin-left: 540px;
+margin-top: 304px;
+font-size: 20px;
+font-family: 'Lato', sans-serif;
+font-weight: bold;
+margin-bottom: 30px;
+}
+
+#flecha {
+margin-left: 665px;
+height: 60px;
+width: 40px;
+}
+
+.divida_container {
+width: 200px;
+height: 128px;
+margin-top: 52px;
+margin-left: 460px;
+position: absolute;
+background: rgba(33,46,125,1);
+border-radius: 8px;
+}
+
+.divida_logo {
+width: 42px;
+height: 38px;
+background: url("../images/ativa.svg");
+background-repeat: no-repeat;
+position: absolute;
+top: 12px;
+left: 85px;
+}
+
+.divida_text {
+width: 134px;
+color: rgba(255,255,255,1);
+position: absolute;
+top: 66px;
+left: 37px;
+font-family: 'Lato', sans-serif;
+font-weight: Bold;
+font-size: 20px;
+text-align: center;
+}
+
+.parcelamento_container {
+width: 200px;
+height: 128px;
+margin-top: 202px;
+margin-left: 460px;
+position: absolute;
+background: rgba(33,46,125,1);
+border-radius: 8px;
+}
+
+.parcelamento_logo {
+width: 42px;
+height: 38px;
+background: url("../images/parcelamento.svg");
+background-repeat: no-repeat;
+position: absolute;
+top: 12px;
+left: 85px;
+}
+
+.parcelamento_text {
+width: 134px;
+color: rgba(255,255,255,1);
+position: absolute;
+top: 66px;
+left: 37px;
+font-family: 'Lato', sans-serif;
+font-weight: Bold;
+font-size: 20px;
+text-align: center;
+}
+
+.info_container {
+width: 200px;
+height: 128px;
+margin-top: 352px;
+margin-left: 460px;
+position: absolute;
+background: rgba(33,46,125,1);
+border-radius: 8px;
+}
+
+.info_logo {
+width: 42px;
+height: 38px;
+background: url("../images/house-solid.svg");
+background-repeat: no-repeat;
+position: absolute;
+top: 12px;
+left: 85px;
+}
+
+.info_text {
+width: 134px;
+color: rgba(255,255,255,1);
+position: absolute;
+top: 66px;
+left: 37px;
+font-family: 'Lato', sans-serif;
+font-weight: Bold;
+font-size: 20px;
+text-align: center;
+}
+
+
+.cobranca_container {
+width: 200px;
+height: 128px;
+margin-top: 52px;
+margin-left: 715px;
+position: absolute;
+background: rgba(33,46,125,1);
+border-radius: 8px;
+}
+
+.cobranca_logo {
+width: 42px;
+height: 38px;
+background: url("../images/adm.svg");
+background-repeat: no-repeat;
+position: absolute;
+top: 12px;
+left: 85px;
+}
+
+.cobranca_text {
+width: 134px;
+color: rgba(255,255,255,1);
+position: absolute;
+top: 66px;
+left: 37px;
+font-family: 'Lato', sans-serif;
+font-weight: Bold;
+font-size: 20px;
+text-align: center;
+}
+
+.iptu_container {
+width: 200px;
+height: 128px;
+margin-top: 202px;
+margin-left: 715px;
+position: absolute;
+background: rgba(33,46,125,1);
+border-radius: 8px;
+}
+
+.iptu_logo {
+width: 42px;
+height: 38px;
+background: url("../images/iptu.svg");
+background-repeat: no-repeat;
+position: absolute;
+top: 12px;
+left: 85px;
+}
+
+.iptu_text {
+width: 134px;
+color: rgba(255,255,255,1);
+position: absolute;
+top: 66px;
+left: 37px;
+font-family: 'Lato', sans-serif;
+font-weight: Bold;
+font-size: 20px;
+text-align: center;
+}
+
+.sair_container {
+width: 200px;
+height: 128px;
+margin-top: 352px;
+margin-left: 715px;
+position: absolute;
+background: rgba(33,46,125,1);
+border-radius: 8px;
+}
+
+.sair_logo {
+width: 42px;
+height: 38px;
+background: url("../images/sair.svg");
+transform: rotate(180);
+background-repeat: no-repeat;
+position: absolute;
+top: 12px;
+left: 85px;
+}
+
+.sair_text {
+width: 134px;
+color: rgba(255,255,255,1);
+position: absolute;
+top: 66px;
+left: 37px;
+font-family: 'Lato', sans-serif;
+font-weight: Bold;
+font-size: 20px;
+text-align: center;
+}
+
+.sair_container:hover {
+  background: #0d6efd;
+}
+
+.info_container:hover {
+  background: #0d6efd;
+}

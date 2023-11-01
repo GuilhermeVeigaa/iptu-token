@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-size: 14px;
+    overflow-x: hidden;
+    background: rgb(241, 245, 247);
+  }
+  .main_container {
+    width: 100%;
+    height: 1024px;
+    background: rgb(241, 245, 247);
+    position: absolute;
+  }
+
+  #brasao {
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    margin-top: 16px;
+    margin-left: 129px;
+  }
+
+  #logo {
+    width: 290px;
+    height: 80px;
+    position: absolute;
+    margin-top: 64px;
+    margin-left: 290px;
+  }
+
+#title {
+  margin-left: 540px;
+  margin-top: 304px;
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+#flecha {
+  margin-left: 680px;
+  height: 60px;
+  width: 40px;
+}
+
+#matricula {
+  margin-left: 510px;
+  margin-top: 62px;
+  width: 420px;
+  height: 48px;
+  border: 1px solid #212E7D;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+}
+
+#matricula::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+#buttons {
+  background: #212d7d00;
+  margin-left: 605px;
+  margin-top: 48px;
+  width: 200px;
+  height: 48px;
+  border: 1px solid #212E7D;
+  border-radius: 10px;
+  font-weight: bold;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  color: #212E7D;
+}
+
+#buttons:hover{
+  background: #212E7D;
+  color: rgb(255,255,255);
+  border: none;
+  cursor: pointer;
+}
+
+label {
+  margin-left: 32rem;
+}

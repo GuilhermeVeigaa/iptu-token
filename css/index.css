@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 14px;
+  overflow-x: hidden;
+  background: rgb(241, 245, 247);
+}
+.main_container {
+  width: 100%;
+  height: 1024px;
+  background: rgb(241, 245, 247);
+  position: absolute;
+}
+
+#brasao {
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  margin-top: 16px;
+  margin-left: 129px;
+}
+
+#logo {
+  width: 290px;
+  height: 80px;
+  position: absolute;
+  margin-top: 64px;
+  margin-left: 290px;
+}
+
+.servicos_container {
+      width: 420px;
+      height: 352px;
+      background: rgba(217,217,217,0.44999998807907104);
+      position: absolute;
+      margin-top: 287px;
+      margin-left: 510px;
+      border-radius: 20px;
+}
+
+.house_border {
+  width: 63px;
+  height: 59px;
+  background: rgba(33,46,125,1);
+  position: absolute;
+  margin-top: 30px;
+  margin-left: 184px;
+  border-radius: 50%;
+}
+
+#house {
+  width: 44px;
+  height: 40px;
+  position: absolute;
+  margin-top: 38px;
+  margin-left: 193px;
+  color: white;
+}
+
+#buttons {
+width: 200px;
+height: 48px;
+font-family: 'Lato',sans-serif;
+}
+
+.button_iptu {
+  margin-top: 8em;
+  margin-left: 8em;
+}
+
+.button_guias {
+  margin-left: 8em;
+  margin-top: 3em;
+}
+
+.btn-primary {
+  background: #212E7D;
+}
