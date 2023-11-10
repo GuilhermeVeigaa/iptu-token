@@ -1,65 +1,104 @@
 <!DOCTYPE html>
 <html lang="pt_BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-    <link href="css/opcoes.css" rel="stylesheet">
+    <link rel="stylesheet" href="./bt5/bootstrap-5.3.1/css/bootstrap.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./css/global.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/opcoes.css">
 
-    <title>Prefeitura de Municipal Paty do Alferes - IPTU</title>
-</head>
-<body>
-    <div class="main_container">
-        <div class="brasao_container">
-            <img src="images/v4_13.png" alt="Brasão da Prefeitura Municipal de Paty do Alferes" id="brasao">
+    <script src="./bt5/jquery/jquery-3.7.0.min.js"></script>
+    <script src="./bt5/bootstrap-5.3.1/js/bootstrap.bundle.min.js"></script>
+
+    <title>Prefeitura Municipal de Paty do Alferes - IPTU</title>
+  </head>
+  <body>
+    <div class="container-xl">
+      <div class="row">
+        <div class="col-xl-12">
+          <img
+            src="images/v4_13.png"
+            alt="Brasão da Prefeitura Municipal de Paty do Alferes"
+            id="brasao"
+          />
+          <img
+            src="images/v4_14.png"
+            alt="Logo da Prefeitura Municipal de Paty do Alferes"
+            id="logo"
+          />
         </div>
-        
-        <div class="logo_container">
-            <img src="images/v4_14.png" alt="Logo da Prefeitura Municipal de Paty do Alferes" id="logo">
-        </div>
-
-        <div class="matricula">
-           <h1 id="title">Escolha uma das opçoes abaixo</h1>
-
-            <div class="arrow">
-                <img src="images/arrow.svg" alt="" id="flecha">
-            </div>
-
-            <div class="divida_container">
-                <span class="divida_text">Dívida ativa</span>
-                <div class="divida_logo"></div>
-            </div>
-
-            <div class="parcelamento_container">
-                <span class="parcelamento_text">Parcelamento do foro</span>
-                <div class="parcelamento_logo"></div>
-            </div>
-
-            <a href="info.html">
-                <div class="info_container">
-                    <span class="info_text">Informações do imóvel</span>
-                    <div class="info_logo"></div>
-                </div>
-            </a>
-
-            <div class="cobranca_container">
-                <span class="cobranca_text">Cobrança adm - Fazenda</span>
-                <div class="cobranca_logo"></div>
-            </div>
-
-            <div class="iptu_container">
-                <span class="iptu_text">IPTU - 2024</span>
-                <div class="iptu_logo"></div>
-            </div>
-
-            <a href="index.html">
-                <div class="sair_container">
-                    <span class="sair_text">Sair</span>
-                    <div class="sair_logo"></div>
-                </div>
-            </a>
-        </div>
+      </div>
     </div>
-</body>
+
+    <div class="container-xl">
+      <div class="row justify-content-center">
+        <div class="col-xl-6 text-center">
+          <p class="h4 fw-bold">Escolha uma das opões abaixo</p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-xl-6 text-center">
+            <img src="./images/arrow.svg" alt="" id="flecha">
+          </div>
+        </div>
+
+        <div class="row justify-content-center mt-4">
+          <div class="col-xl-2 ps-0">
+            <div class="rounded-3 text-center pt-3" id="opcao_container">
+              <img src="./images/ativa.svg" alt="" id="opcao_logo">
+              <p class="h5 fw-bold text-white mt-2 pb-4">Dívida Ativa</p>
+            </div>
+          </div>
+
+          <div class="col-xl-2 ps-0">
+            <div class="rounded-3 text-center pt-3" id="opcao_container">
+              <img src="./images/adm.svg" alt="" id="opcao_logo">
+              <p class="h5 fw-bold text-white mt-2">Cobrança adm - Fazenda</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center mt-2">
+          <div class="col-xl-2 ps-0">
+            <div class="rounded-3 text-center pt-3" id="opcao_container">
+              <img src="./images/parcelamento.svg" alt="" id="opcao_logo">
+              <p class="h5 fw-bold text-white mt-2 pb-4">Parcelamento Foro</p>
+            </div>
+          </div>
+
+          <div class="col-xl-2 ps-0">
+            <div class="rounded-3 text-center pt-3" id="opcao_container">
+              <img src="./images/adm.svg" alt="" id="opcao_logo">
+              <p class="h5 fw-bold text-white mt-3 pb-3">IPTU - 2023</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center mt-2">
+          <div class="col-xl-2 ps-0">
+            <a href="info.html" class="text-decoration-none">
+                <div class="rounded-3 text-center pt-3" id="opcao_container">
+                    <img src="./images/house-solid.svg" alt="" id="opcao_logo">
+                    <p class="h5 pe-1 fw-bold text-white mt-2">Informações do Imóvel</p>
+                </div>
+            </a>
+          </div>
+          
+          <div class="col-xl-2 ps-0">
+            <a href="index.html" class="text-decoration-none">
+                <div class="rounded-3 text-center pt-3" id="opcao_container">
+                    <img src="./images/sair.svg" alt="" id="opcao_logo">
+                    <p class="h5 fw-bold text-white mt-3 pb-3">Sair</p>
+                </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

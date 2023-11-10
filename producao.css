@@ -1,0 +1,17 @@
+#buttons {
+    font-size: 11px;
+}
+
+#input-info {
+    background: rgba(33,46,125,1);
+    width: 170px;
+    height: 32px;
+    font-size: 11px;
+}
+
+#input-info-200px {
+    background: rgba(33,46,125,1);
+    width: 200px;
+    height: 32px;
+    font-size: 10px;
+   }

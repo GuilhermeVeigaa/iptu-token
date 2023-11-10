@@ -1,5 +1,6 @@
 body {
   background: rgb(241, 245, 247);
+  font-family: 'Lato', sans-serif;
 }
 
 #flecha {
@@ -13,4 +14,22 @@ body {
 #logo {
   width: 290px;
   height: 80px;
+}
+#floatingInput::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+#containers {
+  background: rgba(217,217,217,0.44999998807907104);
+}
+
+.btn-primary {
+  background: rgba(33,46,125,1);
+}
+
+.fs-13 {
+  font-size: 13px;
+}
+
+.text-primary2 {
+  color: rgba(33,46,125,1);
 }
