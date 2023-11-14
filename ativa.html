@@ -18,8 +18,8 @@
   </head>
   <body>
     <div class="container-xl">
-      <div class="row">
-        <div class="col-xl-12">
+      <div class="row mt-3">
+        <!--div class="col-xl-12">
           <img
             src="images/v4_13.png"
             alt="Brasão da Prefeitura Municipal de Paty do Alferes"
@@ -30,9 +30,10 @@
             alt="Logo da Prefeitura Municipal de Paty do Alferes"
             id="logo"
             class="me-5"
-          />
-
-          <button class="btn btn-primary rounded-3 fw-bold text-center text-white ms-5 col-xl-1 border-0">Voltar</button>
+          /-->
+        <form action="opcoes.html">
+            <button class="btn btn-primary rounded-3 fw-bold text-center text-white ms-5 col-xl-1 border-0">Voltar</button>
+        </form>
         </div>
       </div>
     </div>
@@ -60,80 +61,40 @@
             </div>
         </div>
 
-        <div class="row mt-5">
-            <div class="col-xl-1">
-                <p class="fw-bold text-black fs-13 border-end border-black h-100">Parcela</p>
-            </div>
+        <div class="row ms-2 mt-2">
+            <table class="table table-hover table-secondary">
+                <thead>
+                    <tr>
+                        <th scope="col">Parcela</th>
+                        <th scope="col">T.Parcela</th>
+                        <th scope="col">Valor</th>
+                        <th scope="col">V.Corrigido</th>
+                        <th scope="col">Juros</th>
+                        <th scope="col">Multa</th>
+                        <th scope="col">Desconto</th>
+                        <th scope="col">Total</th>
+                    </tr>
+                </thead>
 
-            <div class="col-xl-1">
-                <p class="fw-bold text-black fs-13 border-end border-black h-100">T Parcela</p>
-            </div>
-
-            <div class="col-xl-1">
-                <p class="fw-bold text-black fs-13 border-end border-black h-100">Valor</p>
-            </div>
-
-            <div class="col-xl-1 pe-1">
-                <p class="fw-bold text-black fs-13 border-end border-black h-100">V Corrigido</p>
-            </div>
-            
-            <div class="col-xl-1">
-                <p class="fw-bold text-black fs-13 border-end border-black h-100">Juros</p>
-            </div>
-
-            <div class="col-xl-1">
-                <p class="fw-bold text-black fs-13 border-end border-black h-100">Multa</p>
-            </div>
-
-            <div class="col-xl-1">
-                <p class="fw-bold text-black fs-13 border-end border-black h-100">Desconto</p>
-            </div>
-
-            <div class="col-xl-1">
-                <p class="fw-bold text-black fs-13 border-end border-black h-100">Total</p>
-            </div>
-
-            <button class="btn btn-primary rounded-3 fw-bold text-center text-white ms-5 col-xl-1 border-0 fs-13">Parcelas</button>
-
-            <button class="btn btn-primary rounded-3 fw-bold text-center text-white ms-5 col-xl-1 border-0 fs-13">Emitir Recibo</button>
+                <tbody>
+                    <tr>
+                        <th scope="row">0</th>
+                        <th scope="row">0</th>
+                        <th scope="row">0</th>
+                        <th scope="row">0</th>
+                        <th scope="row">0</th>
+                        <th scope="row">0</th>
+                        <th scope="row">0</th>
+                        <th scope="row">0</th>
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
-        <div class="row mt-2 pb-3">
-            <div class="col-xl-1">
-                <p class="fw-bold text-black fs-13 ps-3 border-end border-black h-100">0</p>
-            </div>
+        <div class="row mt-4 me-2 pb-4 justify-content-end">
+            <button class="btn btn-primary rounded-3 fw-bold text-center text-white col-xl-1 border-0 fs-13">Parcelas</button>
 
-            <div class="col-xl-1">
-                <p class="fw-bold text-black fs-13 ps-3 border-end border-black h-100">0</p>
-            </div>
-
-            <div class="col-xl-1">
-                <p class="fw-bold text-black fs-13 ps-3 border-end border-black h-100">0</p>
-            </div>
-
-            <div class="col-xl-1 pe-1">
-                <p class="fw-bold text-black fs-13 ps-3 border-end border-black h-100">0</p>
-            </div>
-
-            <div class="col-xl-1">
-                <p class="fw-bold text-black fs-13 ps-3 border-end border-black h-100">0</p>
-            </div>
-
-            <div class="col-xl-1">
-                <p class="fw-bold text-black fs-13 ps-3 border-end border-black h-100">0</p>
-            </div>
-
-            <div class="col-xl-1">
-                <p class="fw-bold text-black fs-13 ps-3 border-end border-black h-100">0</p>
-            </div>
-
-            <div class="col-xl-1">
-                <p class="fw-bold text-black fs-13 ps-3 border-end border-black h-100">0</p>
-            </div>
-
-            <div class="row">
-                <div class="ms-1 col-xl-8 border-top border-black "></div>
-            </div>
+            <button class="btn btn-primary rounded-3 fw-bold text-center text-white col-xl-1 border-0 fs-13 ms-4">Emitir Recibo</button>
         </div>
     </div>
   </body>
