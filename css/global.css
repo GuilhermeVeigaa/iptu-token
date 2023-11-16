@@ -15,6 +15,11 @@ body {
   width: 290px;
   height: 80px;
 }
+
+/*#brasao {
+  width: 65px;
+  height: 65px;
+}*/
 #floatingInput::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
@@ -28,6 +33,10 @@ body {
 
 .fs-13 {
   font-size: 13px;
+}
+
+.fs-15 {
+  font-size: 15px;
 }
 
 .text-primary2 {
